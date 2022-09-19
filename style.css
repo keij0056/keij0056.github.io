@@ -1,0 +1,213 @@
+body {
+  font-family: sans-serif;
+  background-color: white;
+}
+
+.links,
+.aside,
+.link {
+  margin-right: 30px;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+table {
+  width: 1010px;
+  height: 600px;
+}
+
+a {
+  text-decoration: none;
+}
+/*line styling*/
+h1 {
+  text-align: center;
+  font-size: 56px;
+  font-family: sans-serif;
+  display: flex;
+  flex-direction: row;
+}
+
+h1:before,
+h1:after {
+  content: "";
+  flex: 1 1;
+  border-bottom: 5px solid;
+  margin: auto;
+}
+
+h1:before {
+  margin-right: 10px
+}
+
+h1:after {
+  margin-left: 10px
+}
+/*faq*/
+h4,
+summary {
+  font-size: 20px;
+  text-decoration: strong;
+  margin-bottom: 35px;
+}
+
+.logo {
+  margin-left: 60px;
+}
+
+.me {
+  float: right;
+  width: 450px;
+  height: 380px;
+  margin-right: 70px;
+  margin-top: 20px;
+  border: black solid;
+}
+
+.personal {
+  overflow: hidden;
+  float: left;
+}
+
+
+.aside {
+  overflow: hidden;
+  float: left;
+  margin-left: 10px;
+}
+
+.content {
+  width: 1040px;
+  margin-left: 20px;
+  margin-right: 50px;
+  margin-top: 30px;
+  float: right;
+  padding-bottom: 50px;
+}
+
+p {
+  font-size: 20px;
+}
+
+li {
+  font-size: 20px;
+}
+
+.links {
+  text-align: center;
+  margin-top: 0%;
+  margin-bottom: 0px;
+}
+
+.blogpost {
+  margin-left: 400px;
+  margin-top: 70px;
+}
+
+.blogi {
+  padding-bottom: 20px;
+  font-size: 25px;
+
+}
+
+/*link styling*/
+.link {
+  font-size: 20px;
+}
+
+a {
+  color: grey;
+}
+
+a:visited {
+  color: grey;
+}
+
+a:hover {
+  color: lightblue;
+}
+
+a:active {
+  color: pink;
+}
+
+a:focus {
+  color: pink;
+}
+
+/*image styling*/
+.newcomputer {
+  width: 400px;
+  height: 267px;
+  border: black solid;
+}
+
+.oldcomputer {
+  width: 400px;
+  height: 307 px;
+  border: black solid;
+  margin-left: 100px;
+}
+
+.computer {
+
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+/*aside menu styling*/
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 350px;
+  background-color: #f1f1f1;
+}
+
+li a {
+  display: block;
+  color: #000;
+  padding: 8px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: grey;
+  color: white;
+}
+
+li a:active {
+  background-color: aqua;
+  color: white;
+}
+
+/*nav bar*/
+nav {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: fill;
+  background-color: #f1f1f1;
+  position: sticky;
+}
+
+nav a {
+  display: inline;
+  color: #000;
+  padding: 8px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: grey;
+  color: white;
+}
+
+li a:active {
+  background-color: aqua;
+  color: white;
+}
+
+
