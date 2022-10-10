@@ -1,25 +1,39 @@
 body {
   font-family: sans-serif;
-  background-color: white;
+  background-image: url('resources/lightgreybackground.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
 }
 
-.links,
-.aside,
-.link {
-  margin-right: 30px;
-  text-decoration: none;
+/*General*/
+.content {
+  width: 1040px;
+  margin-left: 20px;
+  margin-right: 50px;
+  float: right;
+  padding-bottom: 50px;
+}
+
+p {
   font-size: 20px;
 }
 
+li {
+  font-size: 20px;
+}
+
+.timeline {
+  font-size: 20px;
+}
+
+/*Dashboard*/
 table {
   width: 1010px;
   height: 600px;
 }
 
-a {
-  text-decoration: none;
-}
-/*line styling*/
+/*Line Styling*/
 h1 {
   text-align: center;
   font-size: 56px;
@@ -34,6 +48,7 @@ h1:after {
   flex: 1 1;
   border-bottom: 5px solid;
   margin: auto;
+  border-color: black;
 }
 
 h1:before {
@@ -43,44 +58,31 @@ h1:before {
 h1:after {
   margin-left: 10px
 }
-/*faq*/
+
+/*Faq*/
 h4,
 summary {
   font-size: 20px;
   text-decoration: strong;
   margin-bottom: 35px;
+  color: lightblue;
+  
+}
+strong {
+  color: black;
 }
 
-.logo {
-  margin-left: 60px;
-}
-
-.me {
-  float: right;
-  width: 450px;
-  height: 380px;
-  margin-right: 70px;
-  margin-top: 20px;
-  border: black solid;
-}
-
+/*Profile*/
 .personal {
   overflow: hidden;
   float: left;
 }
 
-
-.aside {
-  overflow: hidden;
-  float: left;
-  margin-left: 10px;
-}
-
+/*General*/
 .content {
   width: 1040px;
   margin-left: 20px;
   margin-right: 50px;
-  margin-top: 30px;
   float: right;
   padding-bottom: 50px;
 }
@@ -93,12 +95,7 @@ li {
   font-size: 20px;
 }
 
-.links {
-  text-align: center;
-  margin-top: 0%;
-  margin-bottom: 0px;
-}
-
+/*Blog*/
 .blogpost {
   margin-left: 400px;
   margin-top: 70px;
@@ -107,7 +104,6 @@ li {
 .blogi {
   padding-bottom: 20px;
   font-size: 25px;
-
 }
 
 /*link styling*/
@@ -116,37 +112,48 @@ li {
 }
 
 a {
-  color: grey;
-}
-
-a:visited {
-  color: grey;
-}
-
-a:hover {
   color: lightblue;
 }
-
-a:active {
-  color: pink;
+li a:hover {
+  background-color: grey;
+  color: white;
 }
 
-a:focus {
-  color: pink;
+li a:active {
+  background-color: aqua;
+  color: white;
 }
 
 /*image styling*/
+.logo {
+  width: 320px;
+  height: 100px;
+  margin-left: 10px;
+  margin-top: 0px;
+  margin-bottom: 30px;
+}
+
+.me {
+  float: right;
+  width: 450px;
+  height: 380px;
+  margin-right: 70px;
+  margin-top: 15px;
+  border: lightblue solid;
+}
+
 .newcomputer {
   width: 400px;
   height: 267px;
-  border: black solid;
+  border: lightblue solid;
 }
 
 .oldcomputer {
   width: 400px;
   height: 307 px;
-  border: black solid;
+  border: lightblue solid;
   margin-left: 100px;
+  margin-right: 10px;
 }
 
 .computer {
@@ -158,27 +165,40 @@ a:focus {
 }
 
 /*aside menu styling*/
-ul {
+.aside {
+  overflow: hidden;
+  float: left;
+  margin-left: 10px;
+}
+.quicklinktitle {
+  text-align: center;
+  padding-bottom: 12px;
+  padding-top: 15px;
+  border-bottom: solid black;
+}
+.asideul {
   list-style-type: none;
   margin: 0;
   padding: 0;
   width: 350px;
-  background-color: #f1f1f1;
+  background-color: white;
+  opacity: 0.8;
 }
 
-li a {
+.asidemenulinks a {
   display: block;
   color: #000;
   padding: 8px 16px;
   text-decoration: none;
+  padding-bottom: 20px;
 }
 
-li a:hover {
+.asidemenulinks a:hover {
   background-color: grey;
   color: white;
 }
 
-li a:active {
+.asidemenulinks a:active {
   background-color: aqua;
   color: white;
 }
@@ -186,28 +206,28 @@ li a:active {
 /*nav bar*/
 nav {
   list-style-type: none;
-  margin: 0;
-  padding: 0;
+  margin: 0px;
+  padding: 20px;
   width: fill;
   background-color: #f1f1f1;
-  position: sticky;
+  text-align: center;
+
 }
 
 nav a {
   display: inline;
   color: #000;
-  padding: 8px 16px;
+  padding: 20px 70px;
   text-decoration: none;
+  text-align: center;
 }
-
-li a:hover {
+nav a:hover {
   background-color: grey;
   color: white;
 }
 
-li a:active {
+nav a:active {
   background-color: aqua;
   color: white;
+  text-align: right;
 }
-
-
